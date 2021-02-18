@@ -139,9 +139,11 @@ add_action( 'widgets_init', 'theme_em_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
+
+ 
 function theme_em_scripts() {
 
-	wp_enqueue_style( 'theme-em-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'theme-em-style', get_stylesheet_uri(), array(), filemtime(get_template_directory() . "/style.css") );
 	wp_enqueue_style('theme-em-google-font', 'https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap', false);
 	wp_style_add_data( 'theme-em-style', 'rtl', 'replace' );
 

@@ -20,3 +20,52 @@ a {
 		outline: 0;
 	}
 }
+.main-navigation{
+	a {
+		color: $color__link__menu;
+
+		&:visited {
+			color: $color__link__menu-visited;
+		}
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: $color__link__menu-hover;
+		}
+
+		&:focus {
+			outline: thin dotted;
+		}
+
+		&:hover,
+		&:active {
+			outline: 0;
+		}
+	}
+}
+
+.site-title{
+	a {
+		color: $color__link__site-title;
+
+		&:visited {
+			color: $color__link__site-title-visited;
+		}
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: $color__link__site-title-hover;
+		}
+
+		&:focus {
+			outline: thin dotted;
+		}
+
+		&:hover,
+		&:active {
+			outline: 0;
+		}
+	}
+}
