@@ -1088,7 +1088,22 @@ textarea {
 }
 
 .site-footer div {
+  display: inherit;
   justify-content: center;
+  align-items: center;
+}
+
+.wp-image-29:hover {
+  animation: rotatImage 7s infinite linear;
+}
+
+@keyframes rotatImage {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .site {
