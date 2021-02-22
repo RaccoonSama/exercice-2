@@ -538,11 +538,11 @@ a:hover, a:active {
 }
 
 .main-navigation a {
-  color: #41e14e;
+  color: #025c0a;
 }
 
 .main-navigation a:visited {
-  color: #057220;
+  color: #01350e;
 }
 
 .main-navigation a:hover, .main-navigation a:focus, .main-navigation a:active {
@@ -686,7 +686,7 @@ textarea {
   list-style: none;
   margin: 0;
   padding-left: 0;
-  background-color: black;
+  background-color: #61c3e4;
 }
 
 .main-navigation ul ul {
@@ -1019,6 +1019,7 @@ textarea {
   font-size: 12px;
   color: black;
   background-color: aquamarine;
+  overflow-x: hidden;
 }
 
 .home::after {
@@ -1047,6 +1048,9 @@ textarea {
   font-family: "Roboto", monospace;
   font-weight: bold;
   margin-bottom: 0;
+  background-color: mediumslateblue;
+  width: 30%;
+  border-radius: 15px 50px 0px 0px;
 }
 
 .site-title a {
@@ -1055,8 +1059,12 @@ textarea {
 
 .site-description {
   margin-top: 0;
-  font-size: clamp(0.6rem, -0.875rem + 8.333vw, 5rem);
+  font-size: clamp(0.3rem, -0.875rem + 8.333vw, 3rem);
   font-family: "Roboto", monospace;
+  background-color: mediumslateblue;
+  width: 40%;
+  border-radius: 0px 50px 15px 50px;
+  padding-left: 20px;
 }
 
 .acceuil ul {
@@ -1071,6 +1079,46 @@ textarea {
   height: 30%;
 }
 
+.site-footer {
+  height: 7rem;
+  background-color: lightblue;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+
+.site-footer div {
+  justify-content: center;
+  border: 1px solid red;
+}
+
 .site {
   margin: 0 2rem 0 2rem;
+}
+
+.carrousel {
+  width: 300vw;
+  height: 20vh;
+  display: flex;
+  transition: transform .5s;
+  transform: translateX(0);
+}
+
+.carrousel div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.carrousel div:nth-of-type(1) {
+  background-color: #1fb41f;
+}
+
+.carrousel div:nth-of-type(2) {
+  background-color: #1f35b4;
+}
+
+.carrousel div:nth-of-type(3) {
+  background-color: #b41f51;
 }

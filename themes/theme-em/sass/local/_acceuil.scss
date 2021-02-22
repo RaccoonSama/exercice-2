@@ -7,7 +7,7 @@
         font-size: 12px;
         color: black;
        background-color: aquamarine;
-      
+      overflow-x: hidden;
     
     
     &::after {
@@ -35,6 +35,9 @@
     font-family: $font__site-title;
     font-weight: bold;
     margin-bottom: 0;
+    background-color: mediumslateblue;
+    width: 30%;
+    border-radius:15px 50px 0px 0px;
   a {
       text-decoration: none;
   }
@@ -42,10 +45,12 @@
 
 .site-description { 
     margin-top: 0;
-    font-size: clamp(0.6rem, #{"-0.875rem + 8.333vw"}, 5rem);
+    font-size: clamp(0.3rem, #{"-0.875rem + 8.333vw"}, 3rem);
     font-family: $font__site-title;
-
-
+    background-color: mediumslateblue;
+    width: 40%;
+    border-radius:0px 50px 15px 50px;
+    padding-left: 20px;
   }
 
   .acceuil {
@@ -58,5 +63,17 @@
           border-radius: 50%;
           width: 30%;
           height: 30%;
+      }
+  }
+
+  .site-footer {
+      height: 7rem;
+      background-color: lightblue;
+      display: flex;
+      justify-items: center;
+      justify-content: center;
+      div{
+          justify-content: center;
+          border: 1px solid red;
       }
   }
