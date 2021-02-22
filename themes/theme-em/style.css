@@ -1106,6 +1106,10 @@ textarea {
   }
 }
 
+#secondary {
+  display: none;
+}
+
 .site {
   margin: 0 2rem 0 2rem;
 }
