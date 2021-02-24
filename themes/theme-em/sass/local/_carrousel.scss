@@ -1,5 +1,6 @@
 .carrousel {
-    width: 300vw;
+    display: none;
+  /*  width: 300vw;
     height: 20vh;
     display: flex;
     transition: transform .5s;
@@ -18,5 +19,9 @@
         &:nth-of-type(3){
             background-color: rgb(180, 31, 81);
         }
-    }
+    }*/
+}
+
+#un,  #deux, #trois {
+    display: none;
 }
