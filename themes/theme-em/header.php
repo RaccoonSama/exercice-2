@@ -57,7 +57,13 @@
 			<button id="trois">3</button>	
 		<?php endif; ?>
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><img src="https://s2.svgbox.net/hero-outline.svg?ic=menu&color=000" width="32" height="32"></svg></button>
+			<input type="checkbox" id="menu_checkbox">
+			<label for="menu_checkbox">
+			<div class="burger-lines"></div>
+			<div class="burger-lines"></div>
+			<div class="burger-lines"></div>
+			</label>
+			
 			<?php
 			wp_nav_menu(
 				array(
@@ -66,5 +72,6 @@
 				)
 			);
 			?>
+		
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

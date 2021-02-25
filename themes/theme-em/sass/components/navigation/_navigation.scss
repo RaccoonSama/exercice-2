@@ -99,11 +99,13 @@
 	display: block;
 }
 
-
+#primary-menu {
+	display: none;
+}
 
 @media screen and (min-width: 37.5em) {
 
-	.menu-toggle {
+	#menu_checkbox {
 		display: none;
 	}
 
